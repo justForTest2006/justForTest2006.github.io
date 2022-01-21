@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=0.66, user-scalable=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="brand">To0rbies</div>
+      <ul class="linkBox">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="menuButton">
+        <div class="lineOne"></div>
+        <div class="lineTwo"></div>
+        <div class="lineThree"></div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="welcome picture">
+        <h3 class="bigger">Hi, its me to0rbies.</h3>
+        <p>
+          I am chinese hacker that can hack every thing, Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Architecto, quaerat dolor sed
+          corporis nobis aliquid! Dicta iusto aliquam ea accusamus placeat
+          temporibus, explicabo asperiores quo eligendi quod neque laudantium
+          magnam.
+        </p>
+      </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".menuButton").on("click", () => {
+          $(".lineOne").toggleClass("afterClickOne");
+          $(".lineTwo").toggleClass("afterClickTwo");
+          $(".lineThree").toggleClass("afterClickThree");
+          $(".linkBox").toggleClass("showMenu");
+        });
+      });
+    </script>
+  </body>
+</html>
